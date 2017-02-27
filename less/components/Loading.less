@@ -1,0 +1,43 @@
+.Loading {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.Loading-circle {
+  width: 18px;
+  height: 18px;
+  background-color: steelblue;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.Loading-circle1 {
+  animation-delay: -0.32s;
+}
+
+.Loading-circle2 {
+  animation-delay: -0.16s;
+}
+
+.Loading-message {
+  flex: 1 0 100%;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+      transform: scale(1.0);
+    }
+}

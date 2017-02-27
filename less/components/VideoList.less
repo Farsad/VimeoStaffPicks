@@ -1,0 +1,14 @@
+.VideoList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.VideoList-item {
+  box-sizing: border-box;
+  padding: 10px;
+  flex: 1 0 15%;
+  min-width: 300px;
+  &.is-expanded {
+    flex: 1 0 100%;
+  }
+}
